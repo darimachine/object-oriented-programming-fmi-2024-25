@@ -239,9 +239,6 @@ std::ofstream ofs(<file_name>, std::ios::out | std::ios::app);
 | ios::\_Nocreate  | Отваря за вмъкване, само ако файлът с указаното име съществува.                                                                  | 64  |
 | ios::\_Noreplace | Отваря за вмъкване само ако файлът с указаното име не съществува.                                                                | 128 |
 
-```c++
-	ofstream file("file.txt", ios::out | ios::app).
-```
 
 ### [Флагове на състоянията на потока](https://en.cppreference.com/w/cpp/io/ios_base/iostate)
 
@@ -253,7 +250,6 @@ std::ofstream ofs(<file_name>, std::ios::out | std::ios::app);
 | ``.clear()``                                                     | Изчиства състоянието на потока (Вече good() ще върне истина).               |
 | [``.eof()``](https://en.cppreference.com/w/cpp/io/basic_ios/eof) | Достигнат е края на файла.
 
-                                                  |
 
 # Управление на грешки в файловите потоци в C++ (`fstream`)
 
